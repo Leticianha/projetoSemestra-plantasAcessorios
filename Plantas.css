@@ -121,6 +121,14 @@ body {
     justify-content: center;
 } */
 
+.vetor-seta {
+    position: absolute;
+    width: 22.91px;
+    height: 41.01px;
+    margin-left: 140px;
+    margin-top: 30px;
+}
+
 .off {
     font-family: 'darker';
     font-size: 40px;
