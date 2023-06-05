@@ -43,6 +43,25 @@ body {
     background-size: 100%;
 }
 
+/* esconder icones */
+nav ul.menu-icones {
+    display: none;
+}
+
+/* fim */
+
+/* definindo os tamanhos dos  */
+.menu-icone {
+    width: 36px;
+}
+
+.menu-iconess {
+    width: 40px;
+    padding-left: 17px;
+}
+
+/* fim  */
+
 .main-nav {
     max-width: 1170px;
     margin: auto;
@@ -121,12 +140,16 @@ body {
     justify-content: center;
 } */
 
-.vetor-seta {
+.vetor-seta-branca {
     position: absolute;
     width: 22.91px;
     height: 41.01px;
     margin-left: 140px;
     margin-top: 30px;
+}
+
+.vetor-seta-roxo {
+    display: none;
 }
 
 .off {
@@ -138,7 +161,7 @@ body {
     text-align: center;
     background-color: #A3A3F8;
     margin: 0 60px;
-}
+} 
 
 .produtos {
     display: flex;
@@ -904,25 +927,194 @@ a {
     top: 2805px;
 }
 
-.mini{
+.mini {
     position: absolute;
-width: 33px;
-height: 33px;
-left: 784px;
-top: 2805px;
+    width: 33px;
+    height: 33px;
+    left: 784px;
+    top: 2805px;
 }
 
-.endereco{
+.endereco {
     position: absolute;
-width: 898px;
-height: 17px;
-left: 315.5px;
-top: 2880px;
-font-family: 'inter-regular';
-font-style: normal;
-font-weight: 300;
-font-size: 15px;
-line-height: 16px;
-letter-spacing: 0.12em;
-color: #000000;
+    width: 898px;
+    height: 17px;
+    left: 315.5px;
+    top: 2880px;
+    font-family: 'inter-regular';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.12em;
+    color: #000000;
+}
+
+/* responsive */
+
+@media screen and (max-width:400px) {
+/* cabeçalho */
+/* ESCONDENDO OS TEXTOS */
+nav .main-nav ul li a {
+    display: none;
+}
+
+/* MOSTRANDO OS ICONES */
+nav ul.menu-icones {
+    display: flex;
+    margin-left: 30%;
+    /* margin-top: -20%; */
+}
+
+ul {
+    list-style: none;
+}
+
+nav a .menu-icone {
+    padding-left: 20px;
+}
+
+.logo {
+width: 150px;
+height: 150px;
+left: 20%;
+transform: translateX(-50%);
+display: flex;
+}
+/* fim cabeçalho */
+
+/* linha */
+main .gran {
+     width: 350px; 
+    height: 0;
+    margin-left: 25px;
+    /* margin-top: 60px; */
+    text-align: center;
+}
+/* fim linha */
+
+/* off */
+.off {
+    font-family: 'darker';
+    font-size: 20px;
+    /* margin: 18px; */
+    color: #FFFFFF;
+    padding-top: 20px;
+    /* padding-left: 10px;
+    padding-right: 10px; */
+    /* padding-bottom: 20px; */
+    text-align: center;
+    background-color: #A3A3F8;
+}
+/* fim off */
+
+/* seta */
+.vetor-seta-branca {
+    display: none;
+}
+
+.vetor-seta-roxo {
+    display: flex;
+    /* margin: 26px;    */
+}
+
+.seta {
+    z-index: 999;
+    width: 17px;
+    height:auto;
+}
+/* fim seta */
+
+/* produtos */
+.visao {
+    display: none;
+}
+.produto {
+    width: 400px;
+    font-family: 'darker';
+    font-size: 27px;
+    /* margin-top: -60px; */
+}
+/* fim produtos */
+
+/* todas plantas */
+.todas-plantas {
+    background-color: rgba(131, 78, 255, 0.14);
+    width: 357px;
+    height: 800px;
+    margin-left: 5.5%;
+    /* padding-top: 10px; */
+}
+.plantas {
+    flex-direction: column;
+    /* margin-top: 280px; */
+    margin-left: 38px;
+    display: flex;
+}
+
+.planta{
+    width: 279px;
+    height: 400px;
+    background-color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    border-radius: 7px;
+    /* margin-top: 40px; */
+    display: block;
+    position: static;
+    margin: 0;
+}
+
+img {
+    width: 10px;
+    height: auto;
+    /* padding-top: 10px; */
+}
+
+img.imagem-flor {
+    width: 200px;
+    height: auto;
+    text-align: center;
+    /* margin-top: -20px; */
+}
+
+.planta h1 {
+    font-family: 'darker';
+    font-size: 27px;
+    /* margin-top: -5px; */
+}
+
+.preco {
+    font-family: 'antic';
+    font-weight: 100;
+    /* margin-top: -5px; */
+}
+
+.plantas-coluna {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.plantas-colunas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.recomendacao {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tudo-recomendacao {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tudo-recomendacao2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* fim todas plantas */
 }
