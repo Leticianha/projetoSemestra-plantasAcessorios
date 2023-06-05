@@ -963,7 +963,7 @@ nav .main-nav ul li a {
 nav ul.menu-icones {
     display: flex;
     margin-left: 30%;
-    /* margin-top: -20%; */
+    margin-top: -20%;
 }
 
 ul {
@@ -988,7 +988,7 @@ main .gran {
      width: 350px; 
     height: 0;
     margin-left: 25px;
-    /* margin-top: 60px; */
+    margin-top: 60px; 
     text-align: center;
 }
 /* fim linha */
@@ -997,12 +997,12 @@ main .gran {
 .off {
     font-family: 'darker';
     font-size: 20px;
-    /* margin: 18px; */
+     margin: 18px; 
     color: #FFFFFF;
     padding-top: 20px;
-    /* padding-left: 10px;
-    padding-right: 10px; */
-    /* padding-bottom: 20px; */
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px; 
     text-align: center;
     background-color: #A3A3F8;
 }
@@ -1015,7 +1015,7 @@ main .gran {
 
 .vetor-seta-roxo {
     display: flex;
-    /* margin: 26px;    */
+    margin: 26px;   
 }
 
 .seta {
@@ -1033,88 +1033,67 @@ main .gran {
     width: 400px;
     font-family: 'darker';
     font-size: 27px;
-    /* margin-top: -60px; */
+    margin-top: -60px;
 }
 /* fim produtos */
 
 /* todas plantas */
-.todas-plantas {
-    background-color: rgba(131, 78, 255, 0.14);
-    width: 357px;
-    height: 800px;
-    margin-left: 5.5%;
-    /* padding-top: 10px; */
-}
-.plantas {
-    flex-direction: column;
-    /* margin-top: 280px; */
-    margin-left: 38px;
-    display: flex;
+.roxao {
+    display: none;
 }
 
-.planta{
-    width: 279px;
-    height: 400px;
-    background-color: white;
+.plantas, .plantas-coluna, .plantas-colunas, .tudo-recomendacao, .tudo-recomendacao2, .empurrar {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    height: auto;
+    width: 400px;
+    margin: 0;
+    padding: 0;
+    margin-left: 85px;
+}
+
+.planta {
     padding-top: 40px;
-    padding-bottom: 40px;
+    height: 291.77px;
+    width: 203px;
     text-align: center;
     border-radius: 7px;
-    /* margin-top: 40px; */
-    display: block;
-    position: static;
-    margin: 0;
 }
 
 img {
     width: 10px;
     height: auto;
-    /* padding-top: 10px; */
+    padding-top: 10px;
 }
 
 img.imagem-flor {
     width: 200px;
     height: auto;
     text-align: center;
-    /* margin-top: -20px; */
+    margin-top: -20px;
 }
 
 .planta h1 {
     font-family: 'darker';
     font-size: 27px;
-    /* margin-top: -5px; */
+    /margin-top: -5px;
 }
 
 .preco {
     font-family: 'antic';
     font-weight: 100;
-    /* margin-top: -5px; */
+    margin-top: -5px;
 }
 
-.plantas-coluna {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
+.vaso1, .item1, .circular, .preco, .preco1, .preco2, .preco3,
+.preco4, .preco5, .preco6, .estante, .encomenda1, .encomenda2, 
+.encomenda3, .encomenda4, .encomenda5, .encomenda6, .item2,
+.item3, .vaso2, .vaso3, .nani, .kitjardim, .irrigavel,
+.suporteliso, .endereco, .app, .dimi, .mini, .recomendacao {
+    position: static;
+    height: auto;
 }
 
-.plantas-colunas {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.recomendacao {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.tudo-recomendacao {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.tudo-recomendacao2 {
-    display: flex;
-    flex-wrap: wrap;
-}
 /* fim todas plantas */
 }
