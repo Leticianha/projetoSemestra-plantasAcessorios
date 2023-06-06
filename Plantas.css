@@ -97,7 +97,7 @@ nav ul.menu-icones {
     font-family: 'antic';
     text-decoration: none;
     color: #000;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .logo {
@@ -126,9 +126,9 @@ nav ul.menu-icones {
 
 .gran {
     height: 0px;
-    top: 152px;
+    /* top: 152px; */
     border: 0.3px solid #000000;
-    margin: 20px 110px;
+    margin: 26px 160px;
 }
 
 /* .cupom{
@@ -144,7 +144,7 @@ nav ul.menu-icones {
     position: absolute;
     width: 22.91px;
     height: 41.01px;
-    margin-left: 140px;
+    margin-left: 181px;
     margin-top: 30px;
 }
 
@@ -160,8 +160,8 @@ nav ul.menu-icones {
     padding-bottom: 20px;
     text-align: center;
     background-color: #A3A3F8;
-    margin: 0 60px;
-} 
+    margin: 0 0;
+}
 
 .produtos {
     display: flex;
@@ -187,17 +187,22 @@ nav ul.menu-icones {
 
 .todas-plantas {
     background-color: rgba(131, 78, 255, 0.14);
-    width: 1350px;
-    margin-left: 5.5%;
+    width: 1518px;
+    margin: 0;
+}
+
+.linha .gran {
+    height: 0px;
+    border: 0.3px solid #000000;
+    margin: -1px 175px;
 }
 
 .plantas {
-
     height: 500px;
     /* background: rgba(131, 78, 255, 0.14); */
     margin: 50px 80px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding-top: 45px;
 }
 
@@ -226,6 +231,7 @@ nav ul.menu-icones {
     text-align: center;
     border-radius: 7px;
     margin-top: 40px;
+    box-shadow: 2px 2px 4px #A3A3F8;
 }
 
 .planta h1 {
@@ -279,7 +285,7 @@ nav ul.menu-icones {
     /* background: rgba(131, 78, 255, 0.14); */
     margin: -80px 80px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding-top: 20px;
 }
 
@@ -288,7 +294,7 @@ nav ul.menu-icones {
     /* background: rgba(131, 78, 255, 0.14); */
     margin: 50px 80px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding-top: 20px;
 }
 
@@ -307,9 +313,10 @@ a {
     width: 294px;
     height: 32px;
     left: 617px;
-    align-content: center;
+    margin-top: 30px;
+    /* align-content: center; */
     text-align: center;
-    justify-content: center;
+    /* justify-content: center; */
     font-family: 'darker';
     font-style: normal;
     font-weight: 300;
@@ -320,7 +327,7 @@ a {
 
 .tudo-recomendacao {
     position: absolute;
-    top: 1270px;
+    top: 1289px;
     left: 36px;
     justify-content: space-evenly;
 }
@@ -343,6 +350,20 @@ a {
 }
 
 .circular {
+    position: absolute;
+    width: 150px;
+    height: 31px;
+    left: 353px;
+    top: 884px;
+    font-family: 'darker-medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 29px;
+    line-height: 39px;
+    color: #000000;
+}
+
+.tulipa {
     position: absolute;
     width: 150px;
     height: 31px;
@@ -402,6 +423,20 @@ a {
 }
 
 .irrigavel {
+    position: absolute;
+    width: 198px;
+    height: 31px;
+    left: 725px;
+    top: 884px;
+    font-family: 'darker-medium';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    color: #000000;
+}
+
+.cacto {
     position: absolute;
     width: 198px;
     height: 31px;
@@ -504,7 +539,7 @@ a {
 
 .tudo-recomendacao2 {
     position: absolute;
-    top: 1520px;
+    top: 1508px;
     left: 36px;
     justify-content: space-evenly;
 }
@@ -784,8 +819,8 @@ a {
     position: absolute;
     width: 53px;
     height: 17px;
-    left: 759px;
-    top: 43px;
+    left: 799px;
+    top: 2644px;
     text-decoration: none;
     font-family: 'inter-regular';
     font-style: normal;
@@ -853,8 +888,8 @@ a {
     position: absolute;
     width: 22px;
     height: 0px;
-    left: 1064px;
-    top: 53px;
+    left: 1103px;
+    top: 2653px;
     border: 1px solid #000000;
     transform: rotate(90deg);
 }
@@ -919,7 +954,7 @@ a {
     color: #000000;
 }
 
-.dimi {
+.face {
     position: absolute;
     width: 36px;
     height: 36px;
@@ -927,7 +962,7 @@ a {
     top: 2805px;
 }
 
-.mini {
+.insta {
     position: absolute;
     width: 33px;
     height: 33px;
@@ -950,150 +985,725 @@ a {
     color: #000000;
 }
 
-/* responsive */
+/* coiso da mari */
 
-@media screen and (max-width:400px) {
-/* cabeçalho */
-/* ESCONDENDO OS TEXTOS */
-nav .main-nav ul li a {
-    display: none;
+.a {
+    transition: color 0.4s;
+    position: relative;
 }
 
-/* MOSTRANDO OS ICONES */
-nav ul.menu-icones {
-    display: flex;
-    margin-left: 30%;
-    margin-top: -20%;
-}
-
-ul {
-    list-style: none;
-}
-
-nav a .menu-icone {
-    padding-left: 20px;
-}
-
-.logo {
-width: 150px;
-height: 150px;
-left: 20%;
-transform: translateX(-50%);
-display: flex;
-}
-/* fim cabeçalho */
-
-/* linha */
-main .gran {
-     width: 350px; 
-    height: 0;
-    margin-left: 25px;
-    margin-top: 60px; 
-    text-align: center;
-}
-/* fim linha */
-
-/* off */
-.off {
-    font-family: 'darker';
-    font-size: 20px;
-     margin: 18px; 
-    color: #FFFFFF;
-    padding-top: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 20px; 
-    text-align: center;
-    background-color: #A3A3F8;
-}
-/* fim off */
-
-/* seta */
-.vetor-seta-branca {
-    display: none;
-}
-
-.vetor-seta-roxo {
-    display: flex;
-    margin: 26px;   
-}
-
-.seta {
-    z-index: 999;
-    width: 17px;
-    height:auto;
-}
-/* fim seta */
-
-/* produtos */
-.visao {
-    display: none;
-}
-.produto {
-    width: 400px;
-    font-family: 'darker';
-    font-size: 27px;
-    margin-top: -60px;
-}
-/* fim produtos */
-
-/* todas plantas */
-.roxao {
-    display: none;
-}
-
-.plantas, .plantas-coluna, .plantas-colunas, .tudo-recomendacao, .tudo-recomendacao2, .empurrar {
-    display: flex;
-    flex-direction: column;
-    position: static;
-    height: auto;
-    width: 400px;
-    margin: 0;
-    padding: 0;
-    margin-left: 85px;
-}
-
-.planta {
-    padding-top: 40px;
-    height: 291.77px;
-    width: 203px;
-    text-align: center;
-    border-radius: 7px;
-}
-
-img {
-    width: 10px;
-    height: auto;
-    padding-top: 10px;
-}
-
-img.imagem-flor {
-    width: 200px;
-    height: auto;
-    text-align: center;
-    margin-top: -20px;
-}
-
-.planta h1 {
-    font-family: 'darker';
-    font-size: 27px;
-    /margin-top: -5px;
-}
-
-.preco {
+.cadastro {
+    position: relative;
+    margin-top: -100px;
     font-family: 'antic';
-    font-weight: 100;
+    text-decoration: none;
+    color: #000;
+    font-size: 22px;
+    cursor: pointer;
+    top: -5px;
+}
+
+.a {
+    margin: 0 35px;
+    font-family: 'antic';
+    text-decoration: none;
+    color: #000;
+    font-size: 22px;
+    cursor: pointer;
+    background: #FFFFFF;
+}
+
+
+.a p {
+    background-color: #fff;
+}
+
+
+.a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #CDB4FF;
+
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+
+    transition: width 0.3s;
+}
+
+.a:hover::after {
+    width: 100%;
+}
+
+.pop {
+    border: #000000 solid 1px;
+    width: 370px;
+    height: 371px;
+    background: #f6f6f6;
+    border-radius: 11.24px;
+    position: absolute;
+    left: 710PX;
+    top: 0;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    justify-content: center;
+    visibility: hidden;
+    transition: transform 0.1s, top 0.4s;
+    box-shadow: 0 45px 85px #383842;
+    z-index: 999;
+}
+
+.popp {
+    width: 370px;
+    height: 371px;
+    background: #f6f6f6;
+    border-radius: 11.24px;
+    position: absolute;
+    left: 710PX;
+    top: 0;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    justify-content: center;
+    visibility: hidden;
+    transition: transform 0.1s, top 0.4s;
+    box-shadow: 0 45px 85px #383842;
+    z-index: 999;
+}
+
+.pop img {
+    width: 146.03px;
+    height: 152.9px;
+}
+
+.popp img {
+    width: 146.03px;
+    height: 152.9px;
+}
+
+.pop p {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 30px 0 25px;
+    font-family: 'darker-regular';
+}
+
+.popp p {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 30px 0 25px;
+    font-family: 'darker-regular';
+}
+
+.pop button {
+    width: 115.42px;
+    height: 43.77px;
+    margin-top: 17px;
+    padding: 10px 0;
+    background: #EDE4FF;
+    color: #000000;
+    font-family: 'antic';
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 18px;
+    cursor: pointer;
+}
+
+.popp button {
+    width: 115.42px;
+    height: 43.77px;
+    margin-top: 5px;
+    padding: 10px 0;
+    background: #EDE4FF;
+    color: #000000;
+    font-family: 'antic';
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 18px;
+    cursor: pointer;
+}
+
+.open-pop {
+    left: 760px;
+    visibility: visible;
+    top: 350px;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+.open-popp {
+    left: 760px;
+    visibility: visible;
+    top: 350px;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.tenho {
+    font-family: 'darker-regular';
+    font-size: 22px;
+    color: #7878cf;
+    bottom: 150px;
+}
+
+.menu-icone {
+    width: 39px;
+    padding-left: 200px;
+}
+
+.menu-icones {
+    padding-left: 3%;
+
+}
+
+.menu-iconi {
+    width: 40px;
+    margin-right: -10px;
+    margin-top: -2px;
+}
+
+.menuicon {
+    margin-left: -10px;
+}
+
+.menu-iconess {
+    width: 43px;
+    margin-left: -10px;
     margin-top: -5px;
 }
 
-.vaso1, .item1, .circular, .preco, .preco1, .preco2, .preco3,
-.preco4, .preco5, .preco6, .estante, .encomenda1, .encomenda2, 
-.encomenda3, .encomenda4, .encomenda5, .encomenda6, .item2,
-.item3, .vaso2, .vaso3, .nani, .kitjardim, .irrigavel,
-.suporteliso, .endereco, .app, .dimi, .mini, .recomendacao {
-    position: static;
-    height: auto;
+.menu-iconesss {
+    width: 40px;
+    padding-left: 17px;
+    margin-top: -3px;
+
 }
 
-/* fim todas plantas */
+.florroxinha {
+    visibility: hidden;
+    width: 10px;
+}
+
+.local {
+    visibility: hidden;
+    width: 10px;
+}
+
+/* responsive */
+
+@media screen and (max-width:400px) {
+
+    /* cabeçalho */
+    nav .main-nav ul li a {
+        display: none;
+    }
+
+    nav ul.menu-icones {
+        display: flex;
+        margin-left: 40%;
+        margin-top: -20%;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    nav a .menu-icone {
+        padding-left: 20px;
+    }
+
+    .a {
+        visibility: hidden;
+    }
+
+    .logo {
+        width: 150px;
+        height: 150px;
+        left: 20%;
+        transform: translateX(-50%);
+    }
+
+    main .gran {
+        width: 350px;
+        height: 0;
+        margin-left: 25px;
+        margin-top: 50px;
+        text-align: center;
+    }
+
+
+    .menuicon {
+        margin-top: -20px;
+    }
+
+    /* fim linha */
+
+    /* off */
+    .off {
+        font-family: 'darker';
+        font-size: 23px;
+        margin: 0;
+        color: #FFFFFF;
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+        text-align: center;
+        background-color: #A3A3F8;
+    }
+
+    /* fim off */
+
+    /* seta */
+    .vetor-seta-branca {
+        display: none;
+    }
+
+    .vetor-seta-roxo {
+        display: flex;
+        margin: 26px;
+    }
+
+    .seta {
+        z-index: 999;
+        width: 17px;
+        height: auto;
+    }
+
+    /* fim seta */
+
+    /* produtos */
+    .visao {
+        display: none;
+    }
+
+    .produto {
+        width: 400px;
+        font-family: 'darker';
+        font-size: 27px;
+        margin-top: -60px;
+    }
+
+    /* fim produtos */
+
+    /* todas plantas */
+    .todas-plantas {
+        width: 400px;
+        height: 3390px;
+    }
+
+    .linha .gran {
+        width: 350px;
+        height: 0;
+        margin-left: 25px;
+        margin-top: 23px;
+        text-align: center;
+    }
+
+    /* .linha .gran-acessorio {
+        width: 350px;
+        height: 0;
+        margin-left: 25px;
+        margin-top: 23px;
+        text-align: center;
+    } */
+
+    .recomendacao {
+        align-content: center;
+        text-align: center;
+        justify-content: center;
+        font-family: 'darker';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 32px;
+        line-height: 64px;
+        color: #000000;
+        width: 385px;
+        margin-left: 6px;
+        margin-bottom: 20px;
+    }
+
+    .tudo-recomendacao2 {
+        display: none;
+    }
+
+    .plantas,
+    .plantas-coluna,
+    .plantas-colunas,
+    .tudo-recomendacao,
+    .empurrar {
+        display: flex;
+        flex-direction: column;
+        position: static;
+        height: auto;
+        /* width: 400px; */
+        margin: 0;
+        padding: 0;
+        margin-left: 95px;
+    }
+
+    .planta {
+        padding-top: 40px;
+        height: 291.77px;
+        width: 203px;
+        text-align: center;
+        border-radius: 7px;
+    }
+
+    img {
+        width: 10px;
+        height: auto;
+        padding-top: 10px;
+    }
+
+    img.imagem-flor {
+        width: 200px;
+        height: auto;
+        text-align: center;
+        margin-top: -20px;
+    }
+
+    .imagem-flor:hover {
+        width: 200px;
+        transform: scale(1);
+    }
+
+    .planta h1 {
+        font-family: 'darker';
+        font-size: 27px;
+        margin-top: -5px;
+    }
+
+    .preco {
+        font-family: 'antic';
+        font-weight: 100;
+        margin-top: -5px;
+    }
+
+    .vaso1,
+    .vaso2,
+    .nani {
+        position: static;
+        height: auto;
+        width: 150px;
+        margin-left: 27px;
+    }
+
+    .circular,
+    .irrigavel,
+    .vaso3 {
+        width: 150px;
+        height: 31px;
+        font-family: 'darker-medium';
+        font-weight: 500;
+        font-size: 27px;
+        color: #000000;
+        margin-left: 36px;
+    }
+
+    .tulipa,
+    .cacto {
+        width: 150px;
+        height: 31px;
+        font-family: 'darker-medium';
+        font-weight: 500;
+        font-size: 27px;
+        color: #000000;
+        margin-left: 73px;
+    }
+
+    .vaso3 {
+        width: 150px;
+        height: 31px;
+        font-family: 'darker-medium';
+        font-weight: 500;
+        font-size: 27px;
+        color: #000000;
+        margin-left: 55px;
+    }
+
+    .preco1,
+    .preco2,
+    .preco3 {
+        width: 110px;
+        height: 31px;
+        left: 353px;
+        top: 930px;
+        font-family: 'darker-regular';
+        font-weight: 500;
+        font-size: 24px;
+        color: #000000;
+        margin-left: 56px;
+        margin-top: -6px;
+    }
+
+    .encomenda1,
+    .encomenda2,
+    .encomenda3 {
+        width: 137px;
+        height: 31px;
+        font-family: 'darker-regular';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 23px;
+        color: #023d9d;
+        margin-left: 34px;
+        margin-top: -3px;
+        margin-bottom: 47px;
+    }
+
+    .item1,
+    .circular,
+    .tulipa,
+    .cacto,
+    .preco,
+    .preco1,
+    .preco2,
+    .preco3,
+    .preco4,
+    .preco5,
+    .preco6,
+    .estante,
+    .encomenda1,
+    .encomenda2,
+    .encomenda3,
+    .encomenda4,
+    .encomenda5,
+    .encomenda6,
+    .item2,
+    .item3,
+    .vaso3,
+    .kitjardim,
+    .irrigavel,
+    .suporteliso,
+    .recomendacao {
+        position: static;
+        height: auto;
+    }
+
+    /* fim todas plantas */
+
+    /* rodapé */
+    .Plantas,
+    .Acessórios,
+    .Lançamentos,
+    .Favoritos,
+    .Carrinho {
+        visibility: hidden;
+    }
+
+    .linhaum,
+    .linhadois,
+    .linhatres,
+    .linhaquatro,
+    .linhacinco {
+        visibility: hidden;
+    }
+
+    .Suporte {
+        position: absolute;
+        width: 105px;
+        height: 17px;
+        top: 55px;
+        left: 96px;
+        font-family: 'inter-regular';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 21px;
+        text-decoration: none;
+        letter-spacing: 0.12em;
+        color: #000000;
+    }
+
+    .Sobre {
+        position: absolute;
+        width: 103px;
+        height: 17px;
+        left: 208px;
+        top: 55px;
+        text-decoration: none;
+        font-family: 'inter-regular';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 0.12em;
+        color: #000000;
+    }
+
+    .Login {
+        position: absolute;
+        width: 53px;
+        height: 17px;
+        left: 336px;
+        top: 4921px;
+        text-decoration: none;
+        font-family: 'inter-regular';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 0.12em;
+        color: #000000;
+    }
+
+    .linhasete {
+        position: absolute;
+        width: 22px;
+        height: 0px;
+        left: 186.5px;
+        top: 64.5px;
+        border: 1px solid #000000;
+        transform: rotate(90deg);
+    }
+
+    .linhaseis {
+        position: absolute;
+        width: 22px;
+        height: 0px;
+        left: 306px;
+        top: 4929.5px;
+        border: 1px solid #000000;
+        transform: rotate(90deg);
+    }
+
+    .roxao {
+        position: absolute;
+        width: 100%;
+        height: 450px;
+        top: 4866px;
+        text-align: center;
+        align-content: center;
+    }
+
+    .florroxinha {
+        position: absolute;
+        width: 141px;
+        height: auto;
+        visibility: visible;
+        z-index: 999;
+        margin-top: 18px;
+        margin-left: -29px;
+    }
+
+    .endereco {
+        position: absolute;
+        width: 316px;
+        text-align: center;
+        height: 17px;
+        left: 43.5px;
+        top: 5095px;
+        font-family: 'inter-regular';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.12em;
+        color: #000000;
+    }
+
+    .local {
+        position: absolute;
+        visibility: visible;
+        width: 31px;
+        height: auto;
+        z-index: 999;
+        margin-top: 184px;
+        margin-left: 192px;
+    }
+
+    form input[type=submit] {
+        font-family: 'antic';
+        font-size: 17px;
+        font-weight: 600;
+        margin-top: 54px;
+        margin-bottom: 20px;
+        margin-left: -57px;
+        padding: 10px 40px;
+        border: 0;
+        border-radius: 15px;
+        background-color: #CDB4FF;
+        color: #000;
+        cursor: pointer;
+    }
+
+    .login-tenho {
+        position: absolute;
+        text-decoration: none;
+        width: 136px;
+        margin-left: -38px;
+        font-size: 17.8px;
+        color: #4949b5;
+        font-family: 'antic';
+    }
+
+    .app {
+        position: absolute;
+        justify-content: center;
+        text-align: center;
+        align-content: center;
+        width: 119px;
+        height: 17px;
+        left: 146px;
+        top: 5192px;
+        font-family: 'inter-regular';
+        font-style: normal;
+        font-weight: bolder;
+        font-size: 16px;
+        line-height: 23px;
+        letter-spacing: 0.12em;
+        color: #000000;
+    }
+
+    .face {
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        left: 166px;
+        top: 5223px;
+    }
+
+    .insta {
+        position: absolute;
+        width: 33px;
+        height: 33px;
+        left: 211px;
+        top: 5223px;
+    }
+
+    .empurrar {
+        display: none;
+    }
+
+    .pop {
+        display: none;
+    }
+
+    .popp {
+        display: none;
+    }
+
+    .branca {
+        position: absolute;
+        width: 100%;
+        height: 6px;
+        top: 5010px;
+        background-color: white;
+    }
+
+    .branco {
+        position: absolute;
+        width: 100%;
+        height: 6px;
+        top: 5166px;
+        background-color: white;
+    }
+
+    /* fim rodapé */
 }

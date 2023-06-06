@@ -18,35 +18,107 @@
         <nav>
             <div class="main-nav">
                 <ul>
-                    <li><a href="#">Lançamentos</a></li>
-                    <li><a href="#">Plantas</a></li>
-                    <li><a href="#">Acessórios</a></li>
-                    <li><a href="#">Carrinho</a></li>
-                    <li><a href="#">Favoritos</a></li>
-                    <li><a href="#">Cadastre-se</a></li>
+                    <li><a href="#lancamentos">Lançamentos</a></li>
+                    <li><a href="Plantas.html">Plantas</a></li>
+                    <li><a href="Acessorios.html">Acessórios</a></li>
+                    <button type="submit" class="a" onclick="openPop()">
+                        <li>
+                            <p>
+                                Carrinho
+                            </p>
+                        </li>
+                        <!-- <li><a href="">Carrinho</a></li> -->
+                    </button>
+
+                    <button type="submit" class="a" onclick="openPopp()">
+                        <li>
+                            <p>
+                                Favoritos
+                            </p>
+                        </li>
+                    </button>
+                    <li><a class="cadastro" href="cadastro.html">Cadastre-se</a></li>
                 </ul>
             </div>
-            <ul class="menu-icones">
-                <li><a href=""><img class="menu-icone" src="imagem/vetor trevo.png" alt=""></a></li>
-                <li><a href=""><img class="menu-icone" src="imagem/vetor carrinho.png" alt=""></a></li>
-                <li><a href=""><img class="menu-icone" src="imagem/vetor coracao preenchido.png" alt=""></a></li>
-                <li><a href=""><img class="menu-iconess" src="imagem/vetor perfil.png" alt=""></a></li>
-            </ul>
+            </button>
+            <div class="menuicon">
+                <!-- icone -->
+                <ul class="menu-icones">
+                    <li> <a href=""><img class="menu-iconi" src="imagem/vetor trevo.png" alt=""></a></li>
+
+                    <li><a href=""><img class="menu-icone" src="imagem/vetor carrinho.png" alt=""></a></li>
+
+                    <li><a href=""><img class="menu-iconesss" src="imagem/vetor coracao preenchido.png" alt=""></a></li>
+
+                    <li> <a href=""><img class="menu-iconess" src="imagem/vetor perfil.png" alt=""></a></li>
+            </div>
         </nav>
     </header>
 
     <main>
+        <div class="pop" id="pop">
+            <img src="imagem/logo.png" alt="">
+            <p>Para adicionar ao carrinho, cadastre-se ou entre em seu perfil.</p>
+            <button type="button" onclick="closePop()">OK</button>
+            <br><br>
+            <a class="tenho" href="login.html">Já tenho login</a>
+        </div>
+
+        <script>
+            let pop = document.getElementById("pop");
+
+            function openPop() {
+                pop.classList.add("open-pop");
+            }
+
+
+            function closePop() {
+                pop.classList.remove("open-pop");
+            }
+
+        </script>
+
+
+        <div class="popp" id="popp">
+            <img src="imagem/logo.png" alt="">
+            <p>Para adicionar aos favoritos, cadastre-se ou entre em seu perfil.</p>
+
+            <button type="button" onclick="closePopp()">OK</button>
+            <br><br>
+            <a class="tenho" href="login.html">Já tenho login</a>
+        </div>
+
+        <script>
+            let popp = document.getElementById("popp");
+
+            function openPopp() {
+                popp.classList.add("open-popp");
+            }
+
+
+            function closePopp() {
+                popp.classList.remove("open-popp");
+            }
+
+        </script>
+
         <hr class="gran">
 
         <div class="cupom">
             <a href="#">
-                <div class="vetor-seta">
+                <div class="vetor-seta-branca">
                     <img src="imagem/vector seta branca.png" alt="seta" class="vetor seta branca">
                 </div>
             </a>
             <h1 class="off">
                 50% OFF em compras acima de R$ 149,99
             </h1>
+            <!-- seta roxa -->
+            <a href="#">
+                <div class="vetor-seta-roxo">
+                    <img src="imagem/vetor seta roxa.png" alt="seta" class="vetor seta roxo">
+                </div>
+            </a>
         </div>
 
         <div class="produtos">
@@ -57,11 +129,12 @@
             <div class="visao"></div>
         </div>
 
+
         <div class="todas-plantas">
             <div class="plantas">
                 <div class="planta">
                     <a href="#">
-                        <img src="imagem/estante sem borda.png" alt="" class="imagem-flor">
+                        <img src="imagem/estante sem borda.png" alt="estante" class="imagem-flor">
 
                         <div class="titulo-planta">
                             <h1>
@@ -69,7 +142,7 @@
                             </h1>
                     </a>
                     <div class="vetor">
-                        <img src="imagem/vector coracao.png" alt="">
+                        <img src="imagem/vector coracao.png" alt="coração">
                     </div>
                 </div>
                 <div class="planta-preco">
@@ -81,14 +154,14 @@
 
             <div class="planta">
                 <a href="#">
-                    <img src="imagem/pilar madeira.png" alt="" class="imagem-flor">
+                    <img src="imagem/pilar madeira.png" alt="pilar madeira" class="imagem-flor">
                     <div class="titulo-planta">
                         <h1>
                             Pilar madeira
                         </h1>
                 </a>
                 <div class="vetor">
-                    <img src="imagem/vector coracao.png" alt="">
+                    <img src="imagem/vector coracao.png" alt="coração">
                 </div>
             </div>
             <div class="planta-preco">
@@ -97,17 +170,16 @@
                 </h3>
             </div>
         </div>
-
         <div class="planta">
             <a href="#">
-                <img src="imagem/Luminária.png" alt="" class="imagem-flor">
+                <img src="imagem/Luminária.png" alt="Luminária" class="imagem-flor">
                 <div class="titulo-planta">
                     <h1>
                         Luminária
                     </h1>
             </a>
             <div class="vetor">
-                <img src="imagem/vector coracao.png" alt="">
+                <img src="imagem/vector coracao.png" alt="coração">
             </div>
         </div>
         <div class="planta-preco">
@@ -118,17 +190,18 @@
         </div>
         </div>
 
+
         <div class="plantas-coluna">
             <div class="planta">
                 <a href="#">
-                    <img src="imagem/vasso circular sem borda.png" alt="" class="imagem-flor">
+                    <img src="imagem/vaso irrigavel sem borda.png" alt="vaso irrigavel" class="imagem-flor">
                     <div class="titulo-planta">
                         <h1>
                             Vaso irrigável
                         </h1>
                 </a>
                 <div class="vetor">
-                    <img src="imagem/vector coracao.png" alt="">
+                    <img src="imagem/vector coracao.png" alt="coração">
                 </div>
             </div>
             <div class="planta-preco">
@@ -140,14 +213,14 @@
 
         <div class="planta">
             <a href="#">
-                <img src="imagem/vaso nani sem borda.png" alt="" class="imagem-flor">
+                <img src="imagem/vaso nani sem borda.png" alt="vaso nani" class="imagem-flor">
                 <div class="titulo-planta">
                     <h1>
                         Vaso nani
                     </h1>
             </a>
             <div class="vetor">
-                <img src="imagem/vector coracao.png" alt="">
+                <img src="imagem/vector coracao.png" alt="coração">
             </div>
         </div>
         <div class="planta-preco">
@@ -159,14 +232,14 @@
 
         <div class="planta">
             <a href="#">
-                <img src="imagem/vasso circular sem borda.png" alt="" class="imagem-flor">
+                <img src="imagem/vasso circular sem borda.png" alt="vaso circular" class="imagem-flor">
                 <div class="titulo-planta">
                     <h1>
                         Vaso circular
                     </h1>
             </a>
             <div class="vetor">
-                <img src="imagem/vector coracao.png" alt="">
+                <img src="imagem/vector coracao.png" alt="coração">
             </div>
         </div>
         <div class="planta-preco">
@@ -176,6 +249,170 @@
         </div>
         </div>
         </div>
+
+        <div class="plantas-colunas">
+            <div class="planta">
+                <a href="#">
+                    <img src="imagem/suporte liso sem borda.png" alt="suporte liso" class="imagem-flor">
+                    <div class="titulo-planta">
+                        <h1>
+                            Suporte liso
+                        </h1>
+                </a>
+                <div class="vetor">
+                    <img src="imagem/vector coracao.png" alt="coração">
+                </div>
+            </div>
+            <div class="planta-preco">
+                <h3 class="preco">
+                    R$ XXX,XX
+                </h3>
+            </div>
+        </div>
+
+        <div class="planta">
+            <a href="#">
+                <img src="imagem/kit jardim sem borda.png" alt="kit jardim" class="imagem-flor">
+                <div class="titulo-planta">
+                    <h1>
+                        Kit jardim
+                    </h1>
+            </a>
+            <div class="vetor">
+                <img src="imagem/vector coracao.png" alt="coração">
+            </div>
+        </div>
+        <div class="planta-preco">
+            <h3 class="preco">
+                R$ XXX,XX
+            </h3>
+        </div>
+        </div>
+
+        <div class="planta">
+            <a href="#">
+                <img src="imagem/Pilar fosco.png" alt="pilar fosco" class="imagem-flor">
+                <div class="titulo-planta">
+                    <h1>
+                        Pilar fosco
+                    </h1>
+            </a>
+            <div class="vetor">
+                <img src="imagem/vector coracao.png" alt="coração">
+            </div>
+        </div>
+        <div class="planta-preco">
+            <h3 class="preco">
+                R$ XXX,XX
+            </h3>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <br>
+
+        <div class="linha">
+            <hr class="gran">
+        </div>
+
+        <p class="recomendacao">Recomendações</p>
+        <section class="tudo-recomendacao">
+            <a href="#">
+                <article>
+                    <img class="vaso1" src="imagem/tulipa.png" alt="tulipa">
+                    <p class="tulipa">Tulipa</p>
+                    <p class="preco1">R$ XX,XX</p>
+                    <p class="encomenda1">Sob encomenda</p>
+                </article>
+            </a>
+
+            <a href="#">
+                <article>
+                    <img class="vaso2" src="imagem/cacto.png" alt="cacto">
+                    <p class="cacto">Cacto</p>
+                    <p class="preco2">R$XXX,XX</p>
+                    <p class="encomenda2">Sob encomenda</p>
+                </article>
+            </a>
+
+            <a href="#">
+                <article>
+                    <img class="nani" src="imagem/Margarida.png" alt="Margarida">
+                    <p class="vaso3">Margarida</p>
+                    <p class="preco3">R$XXX,XX</p>
+                    <p class="encomenda3">Sob encomenda</p>
+                </article>
+            </a>
+        </section>
+
+        <!-- segunda parte da recomendação -->
+
+        <section class="tudo-recomendacao2">
+            <a href="#">
+                <article>
+                    <img class="item1" src="imagem/babosa.png" alt="babosa">
+                    <p class="estante">Babosa</p>
+                    <p class="preco4">R$XXX.XX</p>
+                    <p class="encomenda4">Sob encomenda</p>
+                </article>
+            </a>
+
+            <a href="#">
+                <article>
+                    <img class="item2" src="imagem/camomila.png" alt="camomila">
+                    <p class="kitjardim">Camomila</p>
+                    <p class="preco5">R$XXX,XX</p>
+                    <p class="encomenda5">Sob encomenda</p>
+                </article>
+            </a>
+
+            <a href="#">
+                <article>
+                    <img class="item3" src="imagem/Girassol.png" alt="girassol">
+                    <p class="suporteliso">Girassol</p>
+                    <p class="preco6">R$XXX,XX</p>
+                    <p class="encomenda6">Sob encomenda</p>
+                </article>
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <img src="imagem/flor roxa contrario.png" alt="flor roxa" class="florroxinha">
+        <img src="imagem/localizacao.png" alt="pin" class="local">
+        <div class="roxao">
+            <div class="empurrar">
+                <a class="Plantas" href="#">Plantas</a>
+                <div class="linhaum"></div>
+                <a class="Acessórios" href="#">Acessórios</a>
+                <div class="linhadois"></div>
+                <a class="Lançamentos" href="#">Lançamentos</a>
+                <div class="linhatres"></div>
+
+                <div class="linhaquatro"></div>
+                <a class="Favoritos" href="#">Favoritos</a>
+                <div class="linhacinco"></div>
+                <a class="Carrinho" href="#">Carrinho</a>
+
+            </div>
+            <a class="Suporte" href="#">Suporte</a>
+            <div class="linhasete"></div>
+            <a class="Sobre" href="#">Sobre nós</a>
+        </div>
+        <div class="linhaseis"></div>
+        <a class="Login" href="#">Login</a>
+        <p class="app">Siga-nos</p>
+        <a href="https://pt-br.facebook.com/people/%C3%81gua-Viva-Flores-e-Decora%C3%A7%C3%B5es/100057605292210/"><img
+                class="face" src="imagem/facebook.png" alt="facebook"></a>
+        <img class="insta" src="imagem/instagram.png" alt="instagram">
+
+        <p class="endereco">Endereço:Rua Santos Dumont, Avenida Santos Dumont, 680, Ferraz de Vasconcelos - SP,
+            08530-000</p>
+
+            <div class="branca"></div>
+            <div class="branco"></div>
+    </footer>
 </body>
 
 </html>
